@@ -1,3 +1,37 @@
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap; 
+    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'); 
+  }
+  
+  @font-face {
+    font-display: swap; 
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+}
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); 
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
+  }
+
+
+
 :root{
     --color-breand:#819B57;
     --color-primary-light:#FAF4EA;
@@ -6,11 +40,24 @@
 }
 
 body {
-color: var(--color-primary-dark)}
-ul{list-style-type: none;}
+color: var(--color-primary-dark);
+font-family: Poppins,sans-serif ;
+font-size: 18px;
+font-weight: 400;
+line-height: 1.5;}
 
+
+address{
+    font-style: normal;
+}
+ 
+
+ul{list-style-type: none;
+}
+/* Button*/
 .button {
     color: var(--color-primary-light);
+    font-weight: 600;
     background-color:var(--color-breand);
     border: 2px solid var(--color-breand);
 border-radius: 8px;
@@ -24,28 +71,87 @@ border-radius: 8px;
 cursor: pointer;
 }
    
-
+/*linc*/
 .linc{
     color: var(--color-primary-light);
+    text-decoration: none;
+    font-weight: 400;
        
 }
 
 .linc:hover{
-color: var(--color-breand)
+color: var(--color-breand);
+font-weight: 600;
 }
 
+/* hero section */
 .hero-title{
-    color: var(--color-primary-light);;
-      
+    color: var(--color-primary-light);
+    text-align: center;
+    font-size: 128px;
+    font-weight: 900;
 }
 
 .hero-title .accent{
-    color: var(--color-breand)
+    color: var(--color-breand);
+   
 }
       
 .adventeges-list{
-    background-color: var(--color-breand)
+    background-color: var(--color-breand);
+}
+.adventeges-item{
+    font-size: 20px;
+    font-weight: 300;
 }
 .section-title .accent{
-    color: var(--color-breand-dark);
+    color: var(--color-breand-dark);}
+
+
+.section-title{ font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3;}
+
+
+/*chef title*/
+.chef-title{
+font-weight: 600;
+font-size: 400;
 }
+
+
+/* traditions text*/
+.traditions-text .breand {
+    color: var(--color-breand);
+}
+.traditions-text .uppercase {
+    color: var(--color-breand);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/*format-title*/
+
+.format-title{
+    font-weight: 600;
+    font-size: 24px;
+}
+.format-text{
+    font-weight: 300;
+    font-size: 14px;
+}
+/* Footer*/
+.adress-link{
+color: var(--color-primary-light);
+font-size: 16px;
+font-weight: 300;
+text-decoration: none;
+}
+.adress-link:hover {
+    color:var(--color-breand);
+    font-size: 16px;
+    font-weight: 300;
+    }
+.adress-copyright {
+    color: #A18268;
+    font-size: 14px;
+}  
